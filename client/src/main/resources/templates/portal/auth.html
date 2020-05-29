@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>权限认证</title>
+</head>
+<body>
+<h1>权限认证</h1>
+<button onclick="auth();">开始权限认证</button>
+<script>
+
+    function auth(){
+        window.location.href = "http://localhost:8080/oauth/authorize?client_id=clientapp&redirect_uri=http://localhost:8085/portal/receive&response_type=code&scope=server";
+    }
+</script>
+</body>
+</html>

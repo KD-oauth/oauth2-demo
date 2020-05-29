@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Title</title>
+</head>
+<body>
+<h1>资源服务器</h1>
+<form action="/login" id="fm1" method="post">
+
+    <div class="login-mmdl">
+        <div class="login-input">
+            <div>
+                <span>用户名：</span><input id="username" name="username" onkeyup="keyup();" placeholder="请输入用户名手机号" type="text" />
+            </div>
+            <div>
+                <span>密码：</span><input id="password" name="password" placeholder="请输入密码" type="password" />
+            </div>
+        </div>
+        <button class="login-btn-dl text-white" href="javascript:;" id="username_password" onclick="login();">登&nbsp;&nbsp;录</button>
+    </div>
+</form>
+</body>
+<script>
+
+function login(){
+    $("fm1").submit();
+}
+</script>
+</html>

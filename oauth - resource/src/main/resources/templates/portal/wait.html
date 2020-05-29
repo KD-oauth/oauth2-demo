@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Title</title>
+</head>
+<body>
+<input type="hidden" id="user" th:value="${username}"/>
+<input type="hidden" id="pass" th:value="${password}"/>
+<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<h1 style='display:none;' id="success">登录中，请稍后</h1>
+<script type='text/javascript'>
+    var username = $("#user").val();
+    var password = $("#pass").val();
+    var url = `http://localhost:8081/portal/hideForm?username=${username}&password=${password}`;
+    location.href=url;
+</script>
+</body>
+</html>
