@@ -1,5 +1,8 @@
 # oauth2-demo
 SpringSecurity+oauth2实现授权认证管理系统
+
+是为线上项目做的demo，具体思路请看CSDN
+
 CSDN：https://blog.csdn.net/a624193873/article/details/106417218
 
 
